@@ -1,0 +1,25 @@
+extends pug/template.pug 
+block index
+	section.sub-header
+		nav
+			a(href="../index.html")
+				img(src="https://i.postimg.cc/ht6ykzHB/logo.png", alt="logo_img") 
+			div.nav-links#navLinks
+				i(class="fas fa-times")(onclick="hideMenu()")
+					ul
+						li 
+							a(href="") Home 
+						li 
+							a(href="") About 
+						li 
+							a(href="") Course
+						li 
+							a(href="") Blog
+						li 
+							a(href="") Contact 
+			i(class="fas fa-bars")(onclick="showMenu()")
+		h1 Our Courses
+	script(src="../JavaScript/menu.js")
+	include pug/section1.pug	
+	include pug/section3.pug
+	include pug/footer.pug 

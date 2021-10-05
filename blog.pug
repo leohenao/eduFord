@@ -1,0 +1,72 @@
+extends pug/template.pug 
+block index
+	section.sub-header
+		nav
+			a(href="../index.html")
+				img(src="https://i.postimg.cc/ht6ykzHB/logo.png", alt="logo_img") 
+			div.nav-links#navLinks
+				i(class="fas fa-times")(onclick="hideMenu()")
+					ul
+						li 
+							a(href="") Home 
+						li 
+							a(href="") About 
+						li 
+							a(href="") Course
+						li 
+							a(href="") Blog
+						li 
+							a(href="") Contact 
+			i(class="fas fa-bars")(onclick="showMenu()")
+		h1 Our Certificate & Online Programs for 2021
+	script(src="../JavaScript/menu.js")
+	
+	section.blog-content
+		div.row 
+			div.blog-left
+				img(src="https://i.postimg.cc/QxPJCLSg/certificate.jpg", alt="certificate-_img")
+				h2 Our Certificate & Online Programs for 2021 
+				p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptas omnis beatae fugiat ab reprehenderit nihil culpa, tempore sit ea expedita eveniet? Corrupti veritatis deserunt, enim culpa ipsum quis dignissimos. 
+				<br>
+				p Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, autem. Fugiat tenetur iure rerum deserunt, sequi magni vitae at minus ullam corrupti exercitationem eligendi dolorem. Ullam voluptas cupiditate at dicta! 
+				<br>
+				p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo harum, aperiam impedit doloribus nisi praesentium possimus neque nihil alias incidunt. 
+				<br>
+				p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sint et quos.
+
+				div.comment-box
+					h3 Leave a Comment
+					form.comment-form
+						input(type=" text" placeholder="Enter Name")
+						input(type=" email" placeholder="Enter Email")
+						textarea(rows="5" placeholder="Your Comment")
+						button.hero-btn.red-btn(type="submit") POST COMMENT
+			
+			div.blog-right
+				h3 Post Categories
+				div
+					span Business Analytics 
+					span 21
+				div
+					span Data Science 
+					span 21
+				div
+					span Statiscis 
+					span 21
+				div
+					span Data Basis 
+					span 21
+				div
+					span GIS 
+					span 21
+				div
+					span Global Data 
+					span 21
+				div
+					span IA (Artificial Intelligence) 
+					span 21
+				div
+					span Personal Growth
+					span 21
+
+	include pug/footer.pug 
