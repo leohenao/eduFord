@@ -1,0 +1,32 @@
+extends pug/template.pug 
+block index
+	section.sub-header
+		nav
+			a(href="../index.html")
+				img(src="https://i.postimg.cc/ht6ykzHB/logo.png", alt="logo_img") 
+			div.nav-links#navLinks
+				i(class="fas fa-times")(onclick="hideMenu()")
+					ul
+						li 
+							a(href="") Home 
+						li 
+							a(href="") About 
+						li 
+							a(href="") Course
+						li 
+							a(href="") Blog
+						li 
+							a(href="") Contact 
+			i(class="fas fa-bars")(onclick="showMenu()")
+		h1 About Us
+	script(src="../JavaScript/menu.js")
+
+	section.about-us 
+		div.row 
+			div.about-col
+				h1 We are the world's largest university 
+				p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repellat in quaerat numquam delectus dignissimos, reprehenderit id veniam ratione molestiae natus facere deleniti ad minus sapiente temporibus, obcaecati omnis consequatur.
+				a.hero-btn.red-btn(href="") EXPLORE NOW
+			div.about-col
+				img(src="https://i.postimg.cc/tTtBnr7q/about.jpg", alt="about_img")
+	include pug/footer.pug 
